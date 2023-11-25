@@ -1,0 +1,128 @@
+[
+  {
+    "contestName": "Design Excellence Challenge",
+    "image": "https://i.ibb.co/Qd9PVSr/STEM-Challenge-Web-Page-Main-Image.jpg",
+    "participationCount": 150,
+    "contestDetails": "Create a cutting-edge design that represents innovation and excellence in your chosen field.",
+    "contestPrize": "Cash prize of $1,000 and feature in our design showcase.",
+    "tags": "Business",
+    "award": "15000",
+    "deadline": "2023-12-15"
+  },
+  {
+    "contestName": "Mobile Game Master  ",
+    "image": "https://i.ibb.co/H7TY45x/photo-1553481187-be93c21490a9-q-80-w-2070-auto-format-fit-crop-ixlib-rb-4-0.jpg",
+    "participationCount": 200,
+    "contestDetails": "Solve complex coding problems and demonstrate your programming prowess.",
+    "contestPrize": "Exclusive internship opportunity with a leading tech company.",
+    "tags": "Coding",
+    "award": "  Internship Opportunity",
+    "deadline": "2023-12-10"
+  },
+
+  {
+    "contestName": "Innovative Space App Challenge",
+    "image": "https://i.ibb.co/sCrL1mv/fill-591x300.png",
+    "participationCount": 180,
+    "contestDetails": "Develop a groundbreaking space app that addresses a real-world problem.",
+    "contestPrize": "13000 + Internship at NASA",
+    "tags": "Business Contest",
+    "award": "50000",
+    "deadline": "2023-12-08"
+  },
+
+  {
+    "contestName": "Environmental Sustainability Challenge",
+    "image": "https://i.ibb.co/4ZD8xrk/slide-1-1642265633861.png",
+    "participationCount": 110,
+    "contestDetails": "Propose innovative solutions to address environmental challenges and promote sustainability.",
+    "contestPrize": "Green Tech Startup Incubation and seed funding.",
+    "tags": "Business Contest",
+    "award": "Startup Incubation",
+    "deadline": "2023-12-12"
+  },
+
+  {
+    "contestName": "Science Fiction Writing Challenge",
+    "image": "https://i.ibb.co/wCYttg4/4-3.jpg",
+    "participationCount": 75,
+    "contestDetails": "Craft an imaginative and compelling science fiction short story that captivates readers.",
+    "contestPrize": "Publication in a renowned science fiction anthology and a writing retreat.",
+    "tags": "Article Writing",
+    "award": "Publication Opportunity",
+    "deadline": "2023-12-14"
+  },
+  {
+    "contestName": "Virtual Reality Design Quest",
+    "image": "https://i.ibb.co/8XCmgbH/Mediakit-1920x1080-FB-v2-1024x576.png",
+    "participationCount": 130,
+    "contestDetails": "Create an immersive virtual reality experience that takes users on a unique journey.",
+    "contestPrize": "State-of-the-art VR headset and a chance to collaborate with VR industry leaders.",
+    "tags": "Gaming",
+    "award": "Collaboration Opportunity",
+    "deadline": "2023-12-16"
+  },
+
+  {
+    "contestName": "Health and Wellness Transformation Challenge",
+    "image": "https://i.ibb.co/Hh3yXGh/wellness-1.jpg",
+    "participationCount": 105,
+    "contestDetails": "Share your journey towards a healthier and happier lifestyle, inspiring others along the way.",
+    "contestPrize": "Wellness retreat and a feature in a health and lifestyle magazine.",
+    "tags": "Medical Contest",
+    "award": "Wellness Retreat",
+    "deadline": "2023-12-11"
+  },
+  {
+    "contestName": "Entrepreneurial Pitch Fest",
+    "image": "https://i.ibb.co/PmvKL4Z/Pitchfest-1024x713.png",
+    "participationCount": 145,
+    "contestDetails": "Present your innovative business idea and convince a panel of investors to support your venture.",
+    "contestPrize": "Startup funding and mentorship from industry experts.",
+    "tags": "Business Contest",
+    "award": "30000 + Startup Funding",
+    "deadline": "2023-12-21"
+  },
+
+  {
+    "contestName": "Startup Pitch Showdown",
+    "image": "https://example.com/startup_pitch_showdown_banner.jpg",
+    "participationCount": 160,
+    "contestDetails": "Present your startup idea to a panel of seasoned investors and industry experts.",
+    "contestPrize": "Seed funding and accelerator program entry.",
+    "tags": "Business Contest",
+    "award": "Seed Funding",
+    "deadline": "2023-12-29"
+  },
+
+  {
+    "contestName": "Expressive Wordsmith Contest",
+    "image": "https://i.ibb.co/z7Zjx80/creativity-creative-ideas-imagination-inspiration-design-concept.jpg",
+    "participationCount": 150,
+    "contestDetails": "Unleash your creativity through captivating storytelling or poetry.",
+    "contestPrize": "Publication in a literary magazine and a writing retreat.",
+    "tags": "Article Writing",
+    "award": "11000 + Publication Opportunity",
+    "deadline": "2023-12-28"
+  },
+  {
+    "contestName": "Medical Breakthrough Challenge",
+    "image": "https://i.ibb.co/w0BkRVD/doctors-front-whiteboard-23-2147822732.jpg",
+    "participationCount": 180,
+    "contestDetails": "Contribute to medical research by proposing innovative solutions for a pressing healthcare issue.",
+    "contestPrize": "Research grant and publication in a medical journal.",
+    "tags": "Medical Contest",
+    "award": "15000 Research Grant",
+    "deadline": "2023-12-30"
+  },
+  {
+    "contestName": "Strategic Innovation Quest",
+    "image": "https://i.ibb.co/hVDnD2q/Innovation-Quest-Plain-min-1.jpg",
+    "participationCount": 120,
+    "contestDetails": "Develop a forward-thinking business strategy to navigate the ever-evolving market landscape.",
+    "contestPrize": "Strategic consulting session and featured case study.",
+    "tags": "Business Contest",
+    "award": "Consulting Session",
+    "deadline": "2023-12-25"
+  }
+]
