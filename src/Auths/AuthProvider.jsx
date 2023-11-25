@@ -7,6 +7,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import { auth } from "./firebase.config";
@@ -36,6 +37,13 @@ const AuthProvider = ({ children }) => {
   const signOutUser = () => {
     setLoading(true);
     return signOut(auth);
+  };
+
+  const updateUserProfile = (name, imgUrl) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: imgUrl,
+    });
   };
 
   useEffect(() => {
@@ -69,6 +77,7 @@ const AuthProvider = ({ children }) => {
     signInUser,
     signOutUser,
     googleLogin,
+    updateUserProfile,
   };
 
   return (
