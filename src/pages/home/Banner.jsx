@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import videoBg from "/video.mp4";
 
-const Banner = () => {
+const Banner = ({ setSearch }) => {
+  const [searchValue, setSearchValue] = useState("");
+  const handleSearch = () => {
+    setSearch(searchValue);
+  };
+
   return (
     <div className="w-full h-screen flex items-center justify-center">
       <div className="top-0  absolute left-0 h-full w-full bg-black bg-opacity-50  "></div>
@@ -20,10 +25,14 @@ const Banner = () => {
         </h1>
         <div className="join">
           <input
-            className="input input-bordered   join-item "
+            onChange={(e) => setSearchValue(e.target.value)}
+            className="input input-bordered  text-black join-item "
             placeholder="Search"
           />
-          <button className="btn join-item rounded-lg bg-slate-800 text-white">
+          <button
+            onClick={handleSearch}
+            className="btn join-item rounded-lg bg-slate-800 text-white"
+          >
             Search
           </button>
         </div>

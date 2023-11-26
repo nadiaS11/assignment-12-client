@@ -35,9 +35,12 @@ const ContestAds = ({ contest }) => {
             {contestName}
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2 lg:justify-start">
-          <div className=" inline-flex h-12 w-full items-center min-w-[15rem] justify-center rounded-full bg-yellow-600 px-6 font-medium tracking-wide text-white shadow-md outline-none transition duration-200 hover:bg-yellow-500 focus:ring sm:w-auto">
+        <div className="flex flex-col items-center justify-center space-y-4 ">
+          <div className=" inline-flex h-12   items-center min-w-[15rem] justify-center rounded-full bg-yellow-600 px-6 font-medium tracking-wide text-white shadow-md   hover:bg-yellow-500 focus:ring  ">
             {award}
+          </div>
+          <div className="btn  min-w-[15rem] justify-center  btn-outline rounded-full border-slate-700 px-6 font-medium tracking-wide   shadow-md   hover:border-slate-500 focus:ring">
+            Hurry Up! Apply Now.
           </div>
         </div>
       </div>

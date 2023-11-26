@@ -25,7 +25,7 @@ const ContestCard = ({ contest }) => {
   } = contest;
 
   return (
-    <div className="flex flex-col rounded border bg-white transition hover:bg-gray-200">
+    <div className="flex flex-col rounded border bg-white transition hover:bg-gray-200 ">
       <div className="">
         <img src={image} className="w-full h-52 object-cover" />
       </div>
@@ -33,8 +33,9 @@ const ContestCard = ({ contest }) => {
         <p className="mb-4 text-xs font-medium">
           Participants: {participationCount}
         </p>
+        <p className="mb-4 text-xs font-medium">{tags}</p>
         <h6 className="mb-4 text-xl font-bold">{contestName}</h6>
-        <h6 className="mb-4  font-light">{contestDetails.slice(0, 100)}...</h6>
+        {/* <h6 className="mb-4  font-light">{contestDetails.slice(0, 100)}...</h6> */}
         <p className="mb-4 text-xs">
           Deadline: {moment(deadline).format("llll")}
         </p>

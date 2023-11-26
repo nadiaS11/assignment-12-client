@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Container from "./../../components/shared/Container";
-import useAxiosPublic from "../../hooks/useAxiosPublic";
-import { useQuery } from "@tanstack/react-query";
 import ContestCard from "./../../components/shared/ContestCard";
-import useSortedContests from "../../hooks/useSortedContests";
 
-const PopularContests = () => {
-  const contests = useSortedContests();
+const PopularContests = ({ contests }) => {
+  console.log("PopularContests Response:", contests);
 
   console.log(contests);
   return (
@@ -21,7 +18,7 @@ const PopularContests = () => {
             awards and opportunities.
           </p>
         </div>
-        <div className="grid gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 mx-auto">
           {contests?.slice(0, 6).map((contest) => (
             <ContestCard key={contest._id} contest={contest} />
           ))}
@@ -31,6 +28,8 @@ const PopularContests = () => {
   );
 };
 
-PopularContests.propTypes = {};
+PopularContests.propTypes = {
+  contests: PropTypes.array,
+};
 
 export default PopularContests;
