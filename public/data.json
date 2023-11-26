@@ -7,7 +7,9 @@
     "contestPrize": "Cash prize of $1,000 and feature in our design showcase.",
     "tags": "Business",
     "award": "15000",
-    "deadline": "2023-12-15"
+    "deadline": "2023-12-15",
+    "winnerName": "Alexandra Thompson",
+    "winnerImage": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "contestName": "Mobile Game Master  ",
@@ -17,7 +19,9 @@
     "contestPrize": "Exclusive internship opportunity with a leading tech company.",
     "tags": "Coding",
     "award": "  Internship Opportunity",
-    "deadline": "2023-12-10"
+    "deadline": "2023-12-10",
+    "winnerName": "Michael Rodriguez",
+    "winnerImage": "https://images.unsplash.com/photo-1554727242-741c14fa561c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlJTIwc21pbGluZ3xlbnwwfHwwfHx8MA%3D%3D"
   },
 
   {
@@ -28,7 +32,9 @@
     "contestPrize": "13000 + Internship at NASA",
     "tags": "Business Contest",
     "award": "50000",
-    "deadline": "2023-12-08"
+    "deadline": "2023-12-08",
+    "winnerName": "Meela Kunis",
+    "winnerImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
 
   {
@@ -39,7 +45,9 @@
     "contestPrize": "Green Tech Startup Incubation and seed funding.",
     "tags": "Business Contest",
     "award": "Startup Incubation",
-    "deadline": "2023-12-12"
+    "deadline": "2023-12-12",
+    "winnerName": "Jonathan Chen",
+    "winnerImage": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
 
   {
@@ -50,7 +58,9 @@
     "contestPrize": "Publication in a renowned science fiction anthology and a writing retreat.",
     "tags": "Article Writing",
     "award": "Publication Opportunity",
-    "deadline": "2023-12-14"
+    "deadline": "2023-12-14",
+    "winnerName": "Stephanie Liverani",
+    "winnerImage": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "contestName": "Virtual Reality Design Quest",
@@ -60,7 +70,9 @@
     "contestPrize": "State-of-the-art VR headset and a chance to collaborate with VR industry leaders.",
     "tags": "Gaming",
     "award": "Collaboration Opportunity",
-    "deadline": "2023-12-16"
+    "deadline": "2023-12-16",
+    "winnerName": "Jurica Koletić",
+    "winnerImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
 
   {
@@ -71,7 +83,9 @@
     "contestPrize": "Wellness retreat and a feature in a health and lifestyle magazine.",
     "tags": "Medical Contest",
     "award": "Wellness Retreat",
-    "deadline": "2023-12-11"
+    "deadline": "2023-12-11",
+    "winnerName": "Joseph Gonzalez",
+    "winnerImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "contestName": "Entrepreneurial Pitch Fest",
@@ -81,18 +95,22 @@
     "contestPrize": "Startup funding and mentorship from industry experts.",
     "tags": "Business Contest",
     "award": "30000 + Startup Funding",
-    "deadline": "2023-12-21"
+    "deadline": "2023-12-21",
+    "winnerName": "Lisa Kudrow",
+    "winnerImage": "https://images.unsplash.com/photo-1541271696563-3be2f555fc4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fHBlb3BsZSUyMHNtaWxpbmd8ZW58MHx8MHx8fDA%3D"
   },
 
   {
     "contestName": "Startup Pitch Showdown",
-    "image": "https://example.com/startup_pitch_showdown_banner.jpg",
+    "image": "https://i.ibb.co/pLWyFyQ/Startup-Showdown.jpg",
     "participationCount": 160,
     "contestDetails": "Present your startup idea to a panel of seasoned investors and industry experts.",
     "contestPrize": "Seed funding and accelerator program entry.",
     "tags": "Business Contest",
     "award": "Seed Funding",
-    "deadline": "2023-12-29"
+    "deadline": "2023-12-29",
+    "winnerName": "Prince Akachi",
+    "winnerImage": "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fHBlb3BsZSUyMHNtaWxpbmd8ZW58MHx8MHx8fDA%3D"
   },
 
   {
@@ -103,7 +121,9 @@
     "contestPrize": "Publication in a literary magazine and a writing retreat.",
     "tags": "Article Writing",
     "award": "11000 + Publication Opportunity",
-    "deadline": "2023-12-28"
+    "deadline": "2023-12-28",
+    "winnerName": "Olivia Martinez",
+    "winnerImage": "https://images.unsplash.com/photo-1530785602389-07594beb8b73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg4fHxwZW9wbGUlMjBzbWlsaW5nfGVufDB8fDB8fHww"
   },
   {
     "contestName": "Medical Breakthrough Challenge",
@@ -113,7 +133,9 @@
     "contestPrize": "Research grant and publication in a medical journal.",
     "tags": "Medical Contest",
     "award": "15000 Research Grant",
-    "deadline": "2023-12-30"
+    "deadline": "2023-12-30",
+    "winnerName": "Isabella Smith",
+    "winnerImage": "https://images.unsplash.com/photo-1564460576398-ef55d99548b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzY0fHxwZW9wbGUlMjBzbWlsaW5nfGVufDB8fDB8fHww"
   },
   {
     "contestName": "Strategic Innovation Quest",
@@ -123,6 +145,8 @@
     "contestPrize": "Strategic consulting session and featured case study.",
     "tags": "Business Contest",
     "award": "Consulting Session",
-    "deadline": "2023-12-25"
+    "deadline": "2023-12-25",
+    "winnerName": "Christina Green",
+    "winnerImage": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTAxfHxwZW9wbGUlMjBzbWlsaW5nfGVufDB8fDB8fHww"
   }
 ]

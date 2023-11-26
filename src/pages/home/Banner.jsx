@@ -20,10 +20,10 @@ const Banner = () => {
         </h1>
         <div className="join">
           <input
-            className="input input-bordered input-lg join-item "
+            className="input input-bordered   join-item "
             placeholder="Search"
           />
-          <button className="btn btn-lg join-item rounded-lg bg-slate-800 text-white">
+          <button className="btn join-item rounded-lg bg-slate-800 text-white">
             Search
           </button>
         </div>

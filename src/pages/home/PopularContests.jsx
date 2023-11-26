@@ -4,20 +4,11 @@ import Container from "./../../components/shared/Container";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import ContestCard from "./../../components/shared/ContestCard";
+import useSortedContests from "../../hooks/useSortedContests";
 
 const PopularContests = () => {
-  const [sortField, setSortField] = useState("");
-  const [sortOrder, setSortOrder] = useState("desc");
-  const axiosPublic = useAxiosPublic();
-  const { data: contests = [] } = useQuery({
-    queryKey: ["contests"],
-    queryFn: async () => {
-      const res = await axiosPublic(
-        "/contests?sortField=participationCount&sortOrder=desc"
-      );
-      return res.data;
-    },
-  });
+  const contests = useSortedContests();
+
   console.log(contests);
   return (
     <Container>
