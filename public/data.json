@@ -5,23 +5,35 @@
     "participationCount": 150,
     "contestDetails": "Create a cutting-edge design that represents innovation and excellence in your chosen field.",
     "contestPrize": "Cash prize of $1,000 and feature in our design showcase.",
-    "tags": "Business",
+    "tags": "Business Contest",
     "award": "15000",
     "deadline": "2023-12-15",
     "winnerName": "Alexandra Thompson",
-    "winnerImage": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "winnerImage": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "rules": [
+      "Entries must be original designs that represent innovation and excellence.",
+      "Submissions should be in a digital format (JPEG, PNG, or PDF).",
+      "Multiple entries from the same participant are allowed.",
+      "Plagiarism is strictly prohibited."
+    ]
   },
   {
     "contestName": "Mobile Game Master  ",
     "image": "https://i.ibb.co/H7TY45x/photo-1553481187-be93c21490a9-q-80-w-2070-auto-format-fit-crop-ixlib-rb-4-0.jpg",
     "participationCount": 200,
-    "contestDetails": "Solve complex coding problems and demonstrate your programming prowess.",
+    "contestDetails": "Solve complex gaming problems and demonstrate your programming prowess.",
     "contestPrize": "Exclusive internship opportunity with a leading tech company.",
-    "tags": "Coding",
+    "tags": "Gaming",
     "award": "  Internship Opportunity",
     "deadline": "2023-12-10",
     "winnerName": "Michael Rodriguez",
-    "winnerImage": "https://images.unsplash.com/photo-1554727242-741c14fa561c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlJTIwc21pbGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+    "winnerImage": "https://images.unsplash.com/photo-1554727242-741c14fa561c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlJTIwc21pbGluZ3xlbnwwfHwwfHx8MA%3D%3D",
+    "rules": [
+      "Participants must solve gaming problems related to mobile game development.",
+      "Entries should include a detailed explanation of the gaming solution.",
+      "Code submissions must be written in a specified programming language.",
+      "Participants can collaborate in teams, but each member must contribute significantly."
+    ]
   },
 
   {
@@ -34,7 +46,13 @@
     "award": "50000",
     "deadline": "2023-12-08",
     "winnerName": "Meela Kunis",
-    "winnerImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "winnerImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "rules": [
+      "Space app submissions must address a real-world problem related to space exploration.",
+      "Entries should include a detailed project proposal and prototype, if applicable.",
+      "Teams are encouraged, and collaboration with experts in the field is allowed.",
+      "Presentations during the evaluation must cover technical aspects and potential impact."
+    ]
   },
 
   {
@@ -47,7 +65,13 @@
     "award": "Startup Incubation",
     "deadline": "2023-12-12",
     "winnerName": "Jonathan Chen",
-    "winnerImage": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "winnerImage": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "rules": [
+      "Submissions must propose innovative solutions to address specific environmental challenges.",
+      "Entries should outline the potential impact and scalability of the proposed solution.",
+      "Participants can submit multiple proposals, but each must address a unique challenge.",
+      "Detailed financial plans for seed funding utilization are encouraged."
+    ]
   },
 
   {
@@ -60,7 +84,13 @@
     "award": "Publication Opportunity",
     "deadline": "2023-12-14",
     "winnerName": "Stephanie Liverani",
-    "winnerImage": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "winnerImage": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "rules": [
+      "Submissions must be original science fiction short stories with a maximum word count.",
+      "Entries will be judged on creativity, writing style, and the ability to captivate the audience.",
+      "Collaborative works are not accepted; each submission must be from an individual participant.",
+      "Authors of selected stories must be available for the writing retreat."
+    ]
   },
   {
     "contestName": "Virtual Reality Design Quest",
@@ -72,7 +102,13 @@
     "award": "Collaboration Opportunity",
     "deadline": "2023-12-16",
     "winnerName": "Jurica Koletić",
-    "winnerImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "winnerImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "rules": [
+      "VR experiences must be original creations and offer a unique and engaging journey for users.",
+      "Entries should be compatible with widely used VR platforms and devices.",
+      "Collaboration with other designers or developers is allowed but must be credited.",
+      "Participants must provide a detailed design document and, if possible, a prototype."
+    ]
   },
 
   {
@@ -85,7 +121,13 @@
     "award": "Wellness Retreat",
     "deadline": "2023-12-11",
     "winnerName": "Joseph Gonzalez",
-    "winnerImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "winnerImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "rules": [
+      "Participants must submit a detailed account of their personal health and wellness journey.",
+      "Entries should include challenges faced, strategies employed, and the overall transformation achieved.",
+      "Content must be original, authentic, and suitable for a wide audience.",
+      "Participants should be open to sharing their experiences for the magazine feature and wellness retreat promotion."
+    ]
   },
   {
     "contestName": "Entrepreneurial Pitch Fest",
@@ -97,7 +139,13 @@
     "award": "30000 + Startup Funding",
     "deadline": "2023-12-21",
     "winnerName": "Lisa Kudrow",
-    "winnerImage": "https://images.unsplash.com/photo-1541271696563-3be2f555fc4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fHBlb3BsZSUyMHNtaWxpbmd8ZW58MHx8MHx8fDA%3D"
+    "winnerImage": "https://images.unsplash.com/photo-1541271696563-3be2f555fc4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fHBlb3BsZSUyMHNtaWxpbmd8ZW58MHx8MHx8fDA%3D",
+    "rules": [
+      "Participants must pitch an original and innovative business idea within the given time limit.",
+      "Presentations will be evaluated based on creativity, market potential, and feasibility.",
+      "Teams are allowed, but each member's contribution must be clearly defined.",
+      "Winners must be open to receiving mentorship and utilizing the startup funding for business development."
+    ]
   },
 
   {
@@ -110,7 +158,13 @@
     "award": "Seed Funding",
     "deadline": "2023-12-29",
     "winnerName": "Prince Akachi",
-    "winnerImage": "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fHBlb3BsZSUyMHNtaWxpbmd8ZW58MHx8MHx8fDA%3D"
+    "winnerImage": "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fHBlb3BsZSUyMHNtaWxpbmd8ZW58MHx8MHx8fDA%3D",
+    "rules": [
+      "Participants must present a comprehensive and convincing pitch for their startup idea.",
+      "Presentations should cover key aspects such as problem statement, solution, market analysis, and revenue model.",
+      "Judging criteria include innovation, market potential, and the team's ability to execute the business plan.",
+      "Winners are expected to utilize the seed funding for business development and actively participate in the accelerator program."
+    ]
   },
 
   {
@@ -123,7 +177,13 @@
     "award": "11000 + Publication Opportunity",
     "deadline": "2023-12-28",
     "winnerName": "Olivia Martinez",
-    "winnerImage": "https://images.unsplash.com/photo-1530785602389-07594beb8b73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg4fHxwZW9wbGUlMjBzbWlsaW5nfGVufDB8fDB8fHww"
+    "winnerImage": "https://images.unsplash.com/photo-1530785602389-07594beb8b73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg4fHxwZW9wbGUlMjBzbWlsaW5nfGVufDB8fDB8fHww",
+    "rules": [
+      "Participants can submit original and creative pieces of storytelling or poetry.",
+      "Entries will be judged based on creativity, emotional impact, and overall literary merit.",
+      "Content should be suitable for publication in a literary magazine.",
+      "Winners are expected to participate in the writing retreat and grant permission for their work to be published."
+    ]
   },
   {
     "contestName": "Medical Breakthrough Challenge",
@@ -135,7 +195,13 @@
     "award": "15000 Research Grant",
     "deadline": "2023-12-30",
     "winnerName": "Isabella Smith",
-    "winnerImage": "https://images.unsplash.com/photo-1564460576398-ef55d99548b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzY0fHxwZW9wbGUlMjBzbWlsaW5nfGVufDB8fDB8fHww"
+    "winnerImage": "https://images.unsplash.com/photo-1564460576398-ef55d99548b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzY0fHxwZW9wbGUlMjBzbWlsaW5nfGVufDB8fDB8fHww",
+    "rules": [
+      "Participants should propose innovative solutions to a healthcare issue, supported by research and evidence.",
+      "Entries must include a detailed explanation of the proposed breakthrough and its potential impact.",
+      "Proposals will be evaluated based on scientific merit, feasibility, and potential societal benefits.",
+      "Winners are expected to utilize the research grant for further development and agree to the publication of their work in a medical journal."
+    ]
   },
   {
     "contestName": "Strategic Innovation Quest",
@@ -147,6 +213,12 @@
     "award": "Consulting Session",
     "deadline": "2023-12-25",
     "winnerName": "Christina Green",
-    "winnerImage": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTAxfHxwZW9wbGUlMjBzbWlsaW5nfGVufDB8fDB8fHww"
+    "winnerImage": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTAxfHxwZW9wbGUlMjBzbWlsaW5nfGVufDB8fDB8fHww",
+    "rules": [
+      "Participants are required to develop a comprehensive and forward-thinking business strategy.",
+      "Strategies should address the challenges and opportunities presented by the dynamic market landscape.",
+      "Submissions will be evaluated based on innovation, feasibility, and potential impact on business growth.",
+      "Winners are expected to actively participate in the strategic consulting session and agree to be featured in a case study."
+    ]
   }
 ]

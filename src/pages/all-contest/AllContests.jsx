@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import useSortedContests from "../../hooks/useSortedContests";
 import ContestCard from "../../components/shared/ContestCard";
 import Container from "./../../components/shared/Container";
-
+import { Box, Tab, Tabs } from "@mui/material";
 const AllContests = () => {
   const [setSearch, contests] = useSortedContests();
 
@@ -13,6 +13,16 @@ const AllContests = () => {
     "Article Writing",
     "Gaming",
   ];
+  const [value, setValue] = React.useState("");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+    console.log(newValue);
+    setSearch(newValue);
+  };
+  // useEffect(() => {
+  //   setSearch("business");
+  // }, [setSearch]);
   return (
     <div>
       <div
@@ -25,7 +35,23 @@ const AllContests = () => {
           </h1>
         </Container>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 py-32 gap-x-6 gap-y-8 mx-auto px-2">
+      <div className=" ">
+        {" "}
+        <Box sx={{ width: "100%" }}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            variant="scrollable"
+            scrollButtons="auto"
+          >
+            {tabs.map((tab, idx) => (
+              <Tab key={idx} value={tab} label={tab} />
+            ))}
+          </Tabs>
+        </Box>
+      </div>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 py-16 gap-x-6 gap-y-8 mx-auto px-2">
         {contests?.map((contest) => (
           <ContestCard key={contest._id} contest={contest} />
         ))}

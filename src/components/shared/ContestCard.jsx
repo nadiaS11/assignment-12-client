@@ -41,7 +41,10 @@ const ContestCard = ({ contest }) => {
         </p>
       </div>
       <div>
-        <Link className="my-4 text-sm btn btn-sm rounded bg-yellow-500 ml-5">
+        <Link
+          to={`/${_id}`}
+          className="my-4 text-sm btn btn-sm rounded bg-yellow-500 ml-5"
+        >
           Details
         </Link>
       </div>

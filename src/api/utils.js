@@ -1,4 +1,5 @@
 import axios from "axios";
+import useAxiosPublic from "../hooks/useAxiosPublic";
 
 export const imgUpload = async (image) => {
   const formData = new FormData();

@@ -9,17 +9,20 @@ const Login = () => {
   const { user, signInUser } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
   useEffect(() => {
     if (user) {
       toast("Already logged in.");
-      navigate(-1);
+      return;
     }
   }, [user, navigate]);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const onSubmit = async (data) => {
     console.log(data);
     const toastId = toast.loading("Logging...");
@@ -27,7 +30,7 @@ const Login = () => {
     try {
       const user = await signInUser(data?.email, data?.password);
       toast.success("Logged in successfully.", { id: toastId });
-      navigate(location?.state ? location.state : "/");
+      navigate(from, { replace: true });
     } catch (err) {
       console.log(err);
     }

@@ -11,12 +11,14 @@ import {
 } from "firebase/auth";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import { auth } from "./firebase.config";
+import useAxiosSecure from "../hooks/useAxiosSecure";
 
 export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const axiosPublic = useAxiosPublic();
+  const axiosSecure = useAxiosSecure();
 
   const googleProvider = new GoogleAuthProvider();
 
@@ -53,12 +55,12 @@ const AuthProvider = ({ children }) => {
       if (currentUser) {
         try {
           const email = auth.currentUser.email;
-
+          console.log(email);
           // Send a request to verify the access token
-          const res = await axiosPublic.post("/jwt", {
+          const res = await axiosSecure.post("/jwt", {
             email: email,
           });
-          console.log(res);
+          console.log(res.data, "for token");
           setLoading(false);
         } catch (error) {
           console.log(error.message);

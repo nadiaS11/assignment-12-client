@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import moment from "moment";
 
 const ContestAds = ({ contest }) => {
   const {
@@ -31,16 +32,16 @@ const ContestAds = ({ contest }) => {
             <span className=" mr-2">in</span>
             <span className="inline-block text-yellow-600">{tags}</span>
           </h2>
-          <p className="text-base text-gray-700 md:text-lg font-semibold">
+          <p className="text-base text-gray-700 md:text-lg font-semibold  ">
             {contestName}
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center space-y-4 ">
-          <div className=" inline-flex h-12   items-center min-w-[15rem] justify-center rounded-full bg-yellow-600 px-6 font-medium tracking-wide text-white shadow-md   hover:bg-yellow-500 focus:ring  ">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 ">
+          <div className=" btn    items-center min-w-[15rem] justify-center rounded-full bg-yellow-600 px-6 font-medium tracking-wide text-white shadow-md   hover:bg-yellow-500 focus:ring  ">
             {award}
           </div>
-          <div className="btn  min-w-[15rem] justify-center  btn-outline rounded-full border-slate-700 px-6 font-medium tracking-wide   shadow-md   hover:border-slate-500 focus:ring">
-            Hurry Up! Apply Now.
+          <div className="btn min-w-[15rem] justify-center  btn-outline rounded-full border-slate-700 px-6 font-medium tracking-wide   shadow-md   hover:border-slate-500 focus:ring">
+            Hurry Up! Closing {moment(deadline).endOf("day").fromNow()}!
           </div>
         </div>
       </div>
