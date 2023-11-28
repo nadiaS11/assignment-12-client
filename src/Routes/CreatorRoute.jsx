@@ -3,22 +3,22 @@ import PropTypes from "prop-types";
 import useAuth from "../hooks/useAuth";
 import { Navigate, useLocation } from "react-router-dom";
 import { TbFidgetSpinner } from "react-icons/tb";
+import useCreator from "../hooks/useCreator";
 
-const PrivateRoute = ({ children }) => {
+const CreatorRoute = ({ children }) => {
   const { user, loading } = useAuth();
+  const [isCreator, isCreatorLoading] = useCreator();
   const location = useLocation();
-  if (loading) {
+  if (loading || isCreatorLoading) {
     return <TbFidgetSpinner className="mt-10 mx-auto  animate-spin" />;
   }
-  // if (user) {
-  //   return children;
-  // }
-  if (!loading && !user?.email) {
-    return <Navigate to={"/login"} state={{ from: location }} replace="true" />;
+  if (user && isCreator) {
+    return children;
   }
-  return children;
+
+  return <Navigate to={"/login"} state={{ from: location }} replace="true" />;
 };
 
-PrivateRoute.propTypes = {};
+CreatorRoute.propTypes = {};
 
-export default PrivateRoute;
+export default CreatorRoute;

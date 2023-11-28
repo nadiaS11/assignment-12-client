@@ -13,6 +13,11 @@ const Navbar = () => {
       <li>
         <Link to={"/all-contest"}>All Contests</Link>
       </li>
+      {user && (
+        <li>
+          <Link to={"/dashboard"}>Dashboard</Link>
+        </li>
+      )}
       {!user && (
         <li>
           <Link to={"/login"}>Login</Link>

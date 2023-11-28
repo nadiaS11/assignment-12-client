@@ -8,6 +8,14 @@ import Details from "../pages/Details/Details";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import Payment from "../pages/payment/Payment";
 import PrivateRoute from "./PrivateRoute";
+import Dashboard from "../components/dashboard/Dashboard";
+import AddContest from "../components/dashboard/creatorDashboard/AddContest";
+import MyCreatedContest from "../components/dashboard/creatorDashboard/MyCreatedContest";
+import SubmittedContest from "./../components/dashboard/creatorDashboard/SubmittedContest";
+import CreatorRoute from "./CreatorRoute";
+import AdminRoute from "./AdminRoute";
+import ManageContests from "../components/dashboard/adminDashboard/ManageContests";
+import ManageUsers from "../components/dashboard/adminDashboard/ManageUsers";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,6 +39,56 @@ const router = createBrowserRouter([
           <PrivateRoute>
             <Payment />
           </PrivateRoute>
+        ),
+      },
+    ],
+  },
+  {
+    path: "dashboard",
+    element: (
+      <PrivateRoute>
+        <Dashboard />
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "add-contest",
+        element: (
+          <CreatorRoute>
+            <AddContest />
+          </CreatorRoute>
+        ),
+      },
+      {
+        path: "created-contest",
+        element: (
+          <CreatorRoute>
+            <MyCreatedContest />
+          </CreatorRoute>
+        ),
+      },
+      {
+        path: "submitted-contest",
+        element: (
+          <CreatorRoute>
+            <SubmittedContest />
+          </CreatorRoute>
+        ),
+      },
+      {
+        path: "manage-contests",
+        element: (
+          <AdminRoute>
+            <ManageContests />
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "manage-users",
+        element: (
+          <AdminRoute>
+            <ManageUsers />
+          </AdminRoute>
         ),
       },
     ],

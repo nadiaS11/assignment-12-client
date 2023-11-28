@@ -4,19 +4,15 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import toast from "react-hot-toast";
+import GoogleButton from "../components/shared/GoogleButton";
 
 const Login = () => {
   const { user, signInUser } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  const from = location?.state?.from?.pathname || "/";
-  useEffect(() => {
-    if (user) {
-      toast("Already logged in.");
-      return;
-    }
-  }, [user, navigate]);
-
+  const from = location?.state?.from?.pathname
+    ? location?.state?.from?.pathname
+    : "/";
   const {
     register,
     handleSubmit,
@@ -30,13 +26,15 @@ const Login = () => {
     try {
       const user = await signInUser(data?.email, data?.password);
       toast.success("Logged in successfully.", { id: toastId });
-      navigate(from, { replace: true });
+      navigate(
+        location?.state?.from?.pathname ? location?.state?.from?.pathname : "/"
+      );
     } catch (err) {
       console.log(err);
     }
   };
   return (
-    <div className=" mt-20   mx-auto min-h-screen">
+    <div className=" mt-20  max-w-xl mx-auto min-h-screen">
       <h2 className="font-semibold text-4xl text-center">Log in </h2>
 
       <form
@@ -86,6 +84,7 @@ const Login = () => {
           className="btn btn-block bg-slate-800 text-white hover:bg-slate-600"
         />
       </form>
+      <GoogleButton />
       <h2 className="font-semibold mt-4 text-xl text-center">
         Don't have an account?{" "}
         <Link to={"/register"} className="text-blue-500">

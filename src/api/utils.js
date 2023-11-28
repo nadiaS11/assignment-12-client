@@ -10,3 +10,8 @@ export const imgUpload = async (image) => {
   );
   return data;
 };
+
+export const clearCookie = async () => {
+  const res = await axios.get("/logout");
+  return res.data;
+};

@@ -55,7 +55,9 @@ const AuthProvider = ({ children }) => {
       if (currentUser) {
         try {
           const email = auth.currentUser.email;
-          console.log(email);
+          const name = auth.currentUser.displayName;
+          const img = auth.currentUser.photoURL;
+          console.log(email, name, img);
           // Send a request to verify the access token
           const res = await axiosSecure.post("/jwt", {
             email: email,
@@ -65,12 +67,14 @@ const AuthProvider = ({ children }) => {
         } catch (error) {
           console.log(error.message);
         }
+      } else {
+        setLoading(false);
       }
     });
     return () => {
       return subscribe(); //clean up function
     };
-  }, [axiosPublic]);
+  }, [axiosPublic, axiosSecure]);
 
   const authInfo = {
     user,

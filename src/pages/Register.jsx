@@ -6,6 +6,7 @@ import { imgUpload } from "../api/utils";
 import useAxiosPublic from "./../hooks/useAxiosPublic";
 import useAuth from "./../hooks/useAuth";
 import toast from "react-hot-toast";
+import GoogleButton from "../components/shared/GoogleButton";
 
 const Register = () => {
   const axiosPublic = useAxiosPublic();
@@ -24,7 +25,6 @@ const Register = () => {
       name: data?.name,
       email: data?.email,
       image: imgUrl,
-      role: "user",
     };
     console.log(user, data.password);
 
@@ -115,14 +115,15 @@ const Register = () => {
         <input
           type="submit"
           value={"Sign Up"}
-          className="btn btn-block bg-slate-800 text-white hover:bg-slate-600"
+          className="btn btn-block text-lg bg-slate-800 text-white hover:bg-slate-600"
         />
       </form>
+      <GoogleButton />
       <h4 className=" mt-4 font-medium">
         Already have an account?{" "}
         <Link to={"/login"} className="text-blue-500">
           Sign In
-        </Link>{" "}
+        </Link>
       </h4>
     </div>
   );

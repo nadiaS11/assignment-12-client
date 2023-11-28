@@ -5,8 +5,10 @@ import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import { FcCheckmark } from "react-icons/fc";
 import Countdown from "react-countdown";
+import useAuth from "./../../hooks/useAuth";
 
 const Details = () => {
+  const { loading } = useAuth();
   const { id } = useParams();
   console.log(id);
   const axiosPublic = useAxiosPublic();
@@ -51,6 +53,8 @@ const Details = () => {
       );
     }
   };
+
+  console.log(renderer);
   return (
     <section className="mx-auto max-w-screen-xl bg-white py-20 text-black  md:py-32">
       <div className="mx-auto px-6 sm:px-8 lg:px-12">
@@ -98,9 +102,11 @@ const Details = () => {
             <div className="text-white">
               <div className="group relative mb-4 overflow-hidden rounded-md border bg-white py-10 px-8 text-black shadow-lg transition-all duration-200 ease-in-out">
                 <div className="flex justify-center gap-4 p-2 flex-col md:flex-row lg:flex-col">
-                  <p className="mt-2  text-3xl font-semibold btn    bg-yellow-600 text-white">
-                    <Countdown date={deadline} renderer={renderer} />
-                  </p>
+                  {!loading && (
+                    <p className="mt-2  text-3xl font-semibold btn    bg-yellow-600 text-white">
+                      <Countdown date={deadline} renderer={renderer} />
+                    </p>
+                  )}
                   <Link
                     to={`/payment/${id}`}
                     className="mt-2   text-3xl font-semibold btn  border-yellow-600 text-yellow-600 bg-white"
