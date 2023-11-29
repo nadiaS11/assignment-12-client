@@ -79,7 +79,7 @@ const ManageUsers = (props) => {
                     <div className="flex items-center gap-3">
                       <div className="avatar">
                         <div className="mask mask-squircle w-12 h-12">
-                          {newUser?.image && <img src={user?.image} />}
+                          {newUser?.image && <img src={newUser?.image} />}
                         </div>
                       </div>
                     </div>

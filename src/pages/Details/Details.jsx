@@ -54,7 +54,7 @@ const Details = () => {
     }
   };
 
-  console.log(renderer);
+  // console.log(renderer);
   return (
     <section className="mx-auto max-w-screen-xl bg-white py-20 text-black  md:py-32">
       <div className="mx-auto px-6 sm:px-8 lg:px-12">
@@ -164,7 +164,7 @@ const Details = () => {
                   "
                   >
                     {idx + 1}
-                    <span>{rule}</span>
+                    <span>{rule.text ? rule.text : rule}</span>
                   </p>
                 ))}
 

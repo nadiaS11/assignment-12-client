@@ -26,6 +26,7 @@ import {
   Assessment,
   AssessmentOutlined,
   ListAltOutlined,
+  People,
 } from "@mui/icons-material";
 import useCreator from "../../../hooks/useCreator";
 import useAdmin from "../../../hooks/useAdmin";
@@ -137,6 +138,41 @@ export default function PersistentDrawerLeft() {
           </IconButton>
         </DrawerHeader>
         <Divider />
+        {/* user lists */}
+        {user && !isCreator && !isAdmin && (
+          <List onClick={handleDrawerClose}>
+            <ListItem>
+              <Link to={"/dashboard/my-profile"} className="flex items-center">
+                <ListItemIcon>
+                  <People />
+                </ListItemIcon>
+                My Profile
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                to={"/dashboard/participated-contest"}
+                className="flex items-center"
+              >
+                <ListItemIcon>
+                  <ListAltOutlined />
+                </ListItemIcon>
+                My Participated Contests
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                to={"/dashboard/winning-contest"}
+                className="flex items-center"
+              >
+                <ListItemIcon>
+                  <AssessmentOutlined />
+                </ListItemIcon>
+                My Winning Contests
+              </Link>
+            </ListItem>
+          </List>
+        )}
         {/* creator lists */}
         {user && isCreator && (
           <List onClick={handleDrawerClose}>

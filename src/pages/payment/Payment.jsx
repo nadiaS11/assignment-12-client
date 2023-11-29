@@ -11,13 +11,13 @@ const stripePromise = loadStripe(import.meta.env.VITE_PAYMENT_KEY);
 
 const Payment = (props) => {
   const { id } = useParams();
+  console.log(id);
   const contest = useSingleContest(id);
   console.log(contest);
   return (
     <div>
-      {" "}
       <Elements stripe={stripePromise}>
-        <CheckoutForm />
+        <CheckoutForm contest={contest} />
       </Elements>
     </div>
   );
