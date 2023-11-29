@@ -97,6 +97,9 @@ const CheckoutForm = ({ contest }) => {
       const paymentInfo = {
         contestName: contest.contestName,
         creator: contest.creator,
+        contestDetails: contest.contestDetails,
+        image: contest.image,
+        deadline: contest.deadline,
         price: contest?.contestPrice ? contest?.contestPrice : 50,
         participant: user?.email,
         transactionId: paymentIntent.id,

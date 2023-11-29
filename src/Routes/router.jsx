@@ -16,6 +16,7 @@ import CreatorRoute from "./CreatorRoute";
 import AdminRoute from "./AdminRoute";
 import ManageContests from "../components/dashboard/adminDashboard/ManageContests";
 import ManageUsers from "../components/dashboard/adminDashboard/ManageUsers";
+import ParticiPatedContests from "../components/dashboard/userDashboard/ParticiPatedContests";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -89,6 +90,14 @@ const router = createBrowserRouter([
           <AdminRoute>
             <ManageUsers />
           </AdminRoute>
+        ),
+      },
+      {
+        path: "participated-contests",
+        element: (
+          <PrivateRoute>
+            <ParticiPatedContests />
+          </PrivateRoute>
         ),
       },
     ],
