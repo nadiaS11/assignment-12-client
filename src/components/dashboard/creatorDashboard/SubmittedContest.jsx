@@ -15,7 +15,7 @@ const SubmittedContest = (props) => {
 
   const [winner, setWinner] = useState("");
 
-  const { data: contests = [] } = useQuery({
+  const { data: contests = [], isLoading: contestsLoading } = useQuery({
     queryKey: ["submittedContests"],
     enabled: !!isCreator,
     queryFn: async () => {
@@ -45,54 +45,58 @@ const SubmittedContest = (props) => {
   return (
     <div>
       <Title>Submitted Contest</Title>
-      <div className="overflow-x-auto">
-        {user &&
-          isCreator &&
-          contests?.map((cont, idx) => (
-            <table key={idx} className="table  ">
-              {/* head */}
-              <thead className="  table-row-group ">
-                <tr>
-                  <th className="font-bold text-xl">{cont?._id}</th>
+      {!contestsLoading && contests.length > 0 ? (
+        <div className="overflow-x-auto">
+          {user &&
+            isCreator &&
+            contests?.map((cont, idx) => (
+              <table key={idx} className="table  ">
+                {/* head */}
+                <thead className="  table-row-group ">
+                  <tr>
+                    <th className="font-bold text-xl">{cont?._id}</th>
 
-                  <th>
-                    {cont?.winnerEmail ? (
-                      `Winner is ${cont?.winnerEmail}`
-                    ) : (
-                      <Listbox
-                        value={winner}
-                        onChange={(value) => handleWinner(value, cont._id)}
-                      >
-                        <Listbox.Button className="select  select-bordered rounded w-full ">
-                          <span>{"Select Winner"}</span>
-                        </Listbox.Button>
-                        <Listbox.Options>
-                          {cont?.participants?.map((user, idx) => (
-                            <Listbox.Option
-                              className={"text-black p-2 cursor-pointer"}
-                              key={idx}
-                              value={user}
-                            >
-                              {user}
-                            </Listbox.Option>
-                          ))}
-                        </Listbox.Options>
-                      </Listbox>
-                    )}
-                  </th>
-                </tr>
-              </thead>
-
-              <tbody>
-                {cont?.participants?.map((user, idx) => (
-                  <tr key={idx} className={"flex flex-col"}>
-                    <th>{user}</th>
+                    <th>
+                      {cont?.winnerEmail ? (
+                        `Winner is ${cont?.winnerEmail}`
+                      ) : (
+                        <Listbox
+                          value={winner}
+                          onChange={(value) => handleWinner(value, cont._id)}
+                        >
+                          <Listbox.Button className="select  select-bordered rounded w-full ">
+                            <span>{"Select Winner"}</span>
+                          </Listbox.Button>
+                          <Listbox.Options>
+                            {cont?.participants?.map((user, idx) => (
+                              <Listbox.Option
+                                className={"text-black p-2 cursor-pointer"}
+                                key={idx}
+                                value={user}
+                              >
+                                {user}
+                              </Listbox.Option>
+                            ))}
+                          </Listbox.Options>
+                        </Listbox>
+                      )}
+                    </th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          ))}
-      </div>
+                </thead>
+
+                <tbody>
+                  {cont?.participants?.map((user, idx) => (
+                    <tr key={idx} className={"flex flex-col"}>
+                      <th>{user}</th>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ))}
+        </div>
+      ) : (
+        <p>No submitted contests yet</p>
+      )}
     </div>
   );
 };

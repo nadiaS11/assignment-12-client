@@ -17,10 +17,14 @@ import AdminRoute from "./AdminRoute";
 import ManageContests from "../components/dashboard/adminDashboard/ManageContests";
 import ManageUsers from "../components/dashboard/adminDashboard/ManageUsers";
 import ParticiPatedContests from "../components/dashboard/userDashboard/ParticiPatedContests";
+import WinningContest from "../components/dashboard/userDashboard/WinningContest";
+import ErrorPage from "../pages/ErrorPage";
+import MyProfile from "../components/dashboard/userDashboard/MyProfile";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -97,6 +101,22 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <ParticiPatedContests />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "winning-contest",
+        element: (
+          <PrivateRoute>
+            <WinningContest />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "my-profile",
+        element: (
+          <PrivateRoute>
+            <MyProfile />
           </PrivateRoute>
         ),
       },
