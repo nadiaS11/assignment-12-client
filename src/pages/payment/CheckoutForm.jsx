@@ -96,7 +96,7 @@ const CheckoutForm = ({ contest }) => {
     if (paymentIntent.status === "succeeded") {
       const paymentInfo = {
         contestName: contest.contestName,
-        creator: contest.creator,
+        creator: contest.creator ? contest.creator : "saraf@gmail.com",
         contestDetails: contest.contestDetails,
         image: contest.image,
         deadline: contest.deadline,

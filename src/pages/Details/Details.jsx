@@ -6,8 +6,13 @@ import { useQuery } from "@tanstack/react-query";
 import { FcCheckmark } from "react-icons/fc";
 import Countdown from "react-countdown";
 import useAuth from "./../../hooks/useAuth";
+import useAdmin from "./../../hooks/useAdmin";
+import useCreator from "../../hooks/useCreator";
 
 const Details = () => {
+  const { user } = useAuth();
+  const [isAdmin] = useAdmin();
+  const [isCreator] = useCreator();
   const { loading } = useAuth();
   const { id } = useParams();
   console.log(id);
@@ -44,11 +49,11 @@ const Details = () => {
     } else {
       // Render a countdown
       return (
-        <span className="flex gap-3  ">
-          {days} <small className="text-slate-800">days </small>: {hours}
-          <small className="text-slate-800"> hr</small> : {minutes}
-          <small className="text-slate-800"> min</small> : {seconds}
-          <small className="text-slate-800"> sec</small>
+        <span className="flex gap-2 flex-wrap  ">
+          {days} <small className="text-slate-800">d</small>: {hours}
+          <small className="text-slate-800">h</small> : {minutes}
+          <small className="text-slate-800">m</small> : {seconds}
+          <small className="text-slate-800">s</small>
         </span>
       );
     }
@@ -86,14 +91,16 @@ const Details = () => {
                 />
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <a
-                  href="#"
-                  title=""
-                  className="hidden group-hover:btn  "
-                  role="button"
-                >
-                  Apply Now
-                </a>
+                {user && !isAdmin && !isCreator && (
+                  <Link
+                    to={`/payment/${id}`}
+                    title=""
+                    className="hidden group-hover:btn  "
+                    role="button"
+                  >
+                    Apply Now
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -103,16 +110,19 @@ const Details = () => {
               <div className="group relative mb-4 overflow-hidden rounded-md border bg-white py-10 px-8 text-black shadow-lg transition-all duration-200 ease-in-out">
                 <div className="flex justify-center gap-4 p-2 flex-col md:flex-row lg:flex-col">
                   {!loading && (
-                    <p className="mt-2  text-3xl font-semibold btn    bg-yellow-600 text-white">
+                    <p className="mt-2    sm:text-2xl   sm:font-semibold btn    bg-yellow-600 text-white">
                       <Countdown date={deadline} renderer={renderer} />
                     </p>
                   )}
-                  <Link
-                    to={`/payment/${id}`}
-                    className="mt-2   text-3xl font-semibold btn  border-yellow-600 text-yellow-600 bg-white"
-                  >
-                    Register for $50
-                  </Link>
+                  {user && !isAdmin && !isCreator && (
+                    <Link
+                      to={`/payment/${id}`}
+                      className="mt-2   text-2xl font-semibold btn  border-yellow-600 text-yellow-600 bg-white"
+                    >
+                      Register for $
+                      {contest.contestPrice ? contest.contestPrice : 50}
+                    </Link>
+                  )}
                 </div>
               </div>
 
