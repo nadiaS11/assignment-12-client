@@ -125,7 +125,9 @@ const AddContest = () => {
             <div>
               <Listbox value={selectedTag} onChange={setSelectedTag}>
                 <Listbox.Button className="select  select-bordered rounded w-full ">
-                  <span>{selectedTag || "Select Contest type"}</span>
+                  <span>
+                    {selectedTag ? selectedTag : "Select Contest type"}
+                  </span>
                 </Listbox.Button>
                 <Listbox.Options>
                   {tags.map((tag, idx) => (
@@ -239,7 +241,7 @@ const AddContest = () => {
               onClick={() => append({ text: "" })}
               className=" btn btn-wide p-2 rounded text-white bg-yellow-600"
             >
-              Add Rule
+              Add More rules
             </button>
           </div>
 
