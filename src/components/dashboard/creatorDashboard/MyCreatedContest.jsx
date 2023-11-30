@@ -5,6 +5,7 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import useAuth from "../../../hooks/useAuth";
 import useCreator from "../../../hooks/useCreator";
 import toast from "react-hot-toast";
+import Title from "../../Title";
 
 const MyCreatedContest = () => {
   const { user } = useAuth();
@@ -21,7 +22,7 @@ const MyCreatedContest = () => {
     enabled: !!isCreator,
     queryFn: async () => {
       const res = await axiosSecure.get(
-        `/creator/contest?email=${user?.email}`
+        `/creator/contest?creator=${user?.email}`
       );
       return res.data;
     },
@@ -62,16 +63,17 @@ const MyCreatedContest = () => {
   console.log(contests);
   return (
     <div className="">
+      <Title>My Created Contest</Title>
       <div className="overflow-x-auto">
         {/* {isLoading && <p className="text-center mb-10">Loading...</p>} */}
         {user && isCreator && (
           <table className="table">
             {/* head */}
-            <thead>
+            <thead className=" ">
               <tr>
                 <th>Contest Image</th>
                 <th>Contest Name</th>
-                <th>Contest Type</th>
+                <th>Contest Status</th>
                 <th>Edit</th>
                 <th>Delete</th>
               </tr>
@@ -90,7 +92,15 @@ const MyCreatedContest = () => {
                     </div>
                   </td>
                   <td className="font-bold ">{contest.contestName}</td>
-                  <td>{contest.tags}</td>
+                  <td
+                    className={`font-bold uppercase ${
+                      contest.status === "pending"
+                        ? "text-red-500"
+                        : "text-green-500"
+                    }`}
+                  >
+                    {contest.status}
+                  </td>
                   <th>
                     <button
                       className="btn btn-sm bg-yellow-600 text-white hover:bg-slate-700"
