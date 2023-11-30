@@ -15,7 +15,11 @@ const SubmittedContest = (props) => {
 
   const [winner, setWinner] = useState("");
 
-  const { data: contests = [], isLoading: contestsLoading } = useQuery({
+  const {
+    data: contests = [],
+    isLoading: contestsLoading,
+    refetch,
+  } = useQuery({
     queryKey: ["submittedContests"],
     enabled: !!isCreator,
     queryFn: async () => {
@@ -37,6 +41,7 @@ const SubmittedContest = (props) => {
         winnerEmail: value,
       });
       console.log(res.data);
+      refetch();
       toast.success("Winner updated successfully");
     } catch (err) {
       console.log(err.message);

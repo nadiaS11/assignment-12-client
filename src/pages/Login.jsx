@@ -68,6 +68,7 @@ const Login = () => {
             autoComplete="current-password"
             required
             className="input input-bordered rounded"
+            placeholder="Password"
           />{" "}
           {errors.password?.type === "required" && (
             <span className="text-red-600">Password is required</span>

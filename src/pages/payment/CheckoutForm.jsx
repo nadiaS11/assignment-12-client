@@ -121,7 +121,7 @@ const CheckoutForm = ({ contest }) => {
         console.log(increaseParticipants.data);
 
         toast.success("Successfully registered for the contest.");
-        navigate("/dashboard/participated-contests");
+        navigate("/dashboard/participated-contest");
       } catch (err) {
         console.log(err.message);
       } finally {
